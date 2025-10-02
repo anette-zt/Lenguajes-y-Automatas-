@@ -14,7 +14,7 @@ def extraer_urls(texto):
     return resultados
 
 # Ejemplo de texto
-texto = "Visita https://www.google.com o http://github.com/usuario. También puedes ir a www.python.org para más info."
+texto = "Visita https://www.google.com o http://github.com/usuario."
 urls = extraer_urls(texto)
 for i, u in enumerate(urls, 1):
     print(f"URL {i}: {u['url']}\n  Protocolo: {u['protocolo']}\n  Dominio: {u['dominio']}\n  Ruta: {u['ruta']}")

@@ -3,7 +3,7 @@
 import re
 from datetime import datetime
 
-# Map de meses en español a número
+# Meses convertido a numeros en espanol e ingles
 meses = {
     "Enero": "01", "Febrero": "02", "Marzo": "03", "Abril": "04",
     "Mayo": "05", "Junio": "06", "Julio": "07", "Agosto": "08",
@@ -34,7 +34,7 @@ def formatear_fecha(fecha):
         return f"{match[3]}-{mes}-{match[2]}"
     return "Formato desconocido"
 
-texto = "La reunión es el 15/03/2024. El proyecto inicia el 2024-04-20 y termina en Junio 30, 2024. La entrega final es 01-Jul-2024."
+texto = "La reunión es el 11/08/2001. El proyecto inicia el 1995-12-30 y termina en Septiembre 03, 2014. La entrega final es 12-Ene-1971."
 fechas = re.findall(r'(\d{2}/\d{2}/\d{4}|\d{4}-\d{2}-\d{2}|\d{2}-[A-Za-z]{3}-\d{4}|[A-Za-z]+ \d{2}, \d{4})', texto)
 
 print("Fechas encontradas y convertidas:")
