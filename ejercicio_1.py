@@ -9,7 +9,7 @@ def validacion_correos(correo):
     else:
         return False
     
-correos = ["anette.@dial.com","juan@navico.mx", "angelica@ite.mx"]
+correos = ["anette.@dial.com","juan@navico.mx", "@ejemplo.com", "usuarioejemplo.com"]
 
 for correo in correos:
     resultado = "valido" if validacion_correos(correo) else "invalido"
