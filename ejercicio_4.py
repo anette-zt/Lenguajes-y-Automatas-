@@ -2,19 +2,30 @@
 
 import re
 
-def extraer_urls(texto):
-    patron = r'((https?://)?(www\.)?[\w.-]+\.\w+(/[^\s]*)?)'
-    urls = re.findall(patron, texto)
-    resultados = []
-    for url in urls:
-        protocolo = "http" if url[1] else "N/A"
-        dominio = url[2] + url[0].split("://")[-1].split("/")[0] if url[2] else url[0].split("://")[-1].split("/")[0]
-        ruta = "/" + "/".join(url[0].split("://")[-1].split("/")[1:]) if "/" in url[0].split("://")[-1] else ""
-        resultados.append({"url": url[0], "protocolo": protocolo, "dominio": dominio, "ruta": ruta})
-    return resultados
-
-# Ejemplo de texto
 texto = "Visita https://www.google.com o http://github.com/usuario."
-urls = extraer_urls(texto)
-for i, u in enumerate(urls, 1):
-    print(f"URL {i}: {u['url']}\n  Protocolo: {u['protocolo']}\n  Dominio: {u['dominio']}\n  Ruta: {u['ruta']}")
+
+# Captura toda la URL
+patron = r'(https?://[^\s]+|www\.[^\s]+)'
+
+urls = re.findall(patron, texto)
+
+for i, url in enumerate(urls, 1):
+    print(f"URL {i}: {url}")
+    # Sacar protocolo
+    if url.startswith("http://"):
+        protocolo = "http"
+    elif url.startswith("https://"):
+        protocolo = "https"
+    else:
+        protocolo = "N/A"
+    # Seccion que saca el dominio y ruta
+    partes = url.replace("http://", "").replace("https://", "")
+    if "/" in partes:
+        dominio, ruta = partes.split("/", 1)
+        ruta = "/" + ruta
+    else:
+        dominio, ruta = partes, ""
+    
+    print(f"  Protocolo: {protocolo}")
+    print(f"  Dominio: {dominio}")
+    print(f"  Ruta: {ruta}")

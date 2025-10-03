@@ -1,16 +1,18 @@
 """Codigo de expresion regular para validar correos electronicos"""
 
-import re 
+import re
 
-def validacion_correos(correo):
+def validar_correo(correo):
+    # Regex simple para validar correo
     patron = r'^[\w\.-]+@[\w\.-]+\.\w+$'
     if re.match(patron, correo):
         return True
     else:
         return False
-    
-correos = ["anette.@dial.com","juan@navico.mx", "@ejemplo.com", "usuarioejemplo.com"]
+
+# Casos de prueba
+correos = ["usuario@ejemplo.com", "nombre.apellido@dominio.mx", "usuarioejemplo.com", "@ejemplo.com"]
 
 for correo in correos:
-    resultado = "valido" if validacion_correos(correo) else "invalido"
-    print(f"{correo} {resultado}")
+    resultado = "Válido" if validar_correo(correo) else "Inválido"
+    print(f"{correo} → {resultado}")
