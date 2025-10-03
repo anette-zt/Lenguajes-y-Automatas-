@@ -44,4 +44,4 @@ for f in fechas:
     try:
         datetime.strptime(estandar, "%Y-%m-%d")
     except ValueError:
-        print(f"  ¡Error! La fecha {f} no es válida.")
+        print(f"  ¡Error! La fecha {f} no es válida.")        

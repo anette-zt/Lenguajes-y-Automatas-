@@ -4,7 +4,7 @@ import re
 
 def validar_contrasena(password):
     criterios = {
-        "longitud": len(password) >= 8,
+        "longitud": len(password) >= 8, 
         "mayuscula": re.search(r'[A-Z]', password) is not None,
         "minuscula": re.search(r'[a-z]', password) is not None,
         "numero": re.search(r'\d', password) is not None,

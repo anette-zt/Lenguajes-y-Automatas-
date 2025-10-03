@@ -3,12 +3,12 @@
 import re
 
 def validar_correo(correo):
-    # Regex simple para validar correo
+    # Patron del correo
     patron = r'^[\w\.-]+@[\w\.-]+\.\w+$'
     if re.match(patron, correo):
         return True
     else:
-        return False
+        return False       
 
 # Casos de prueba
 correos = ["usuario@ejemplo.com", "nombre.apellido@dominio.mx", "usuarioejemplo.com", "@ejemplo.com"]

@@ -4,7 +4,7 @@ import re
 
 texto = "Visita https://www.google.com o http://github.com/usuario."
 
-# Captura toda la URL
+# Captura toda la URL      
 patron = r'(https?://[^\s]+|www\.[^\s]+)'
 
 urls = re.findall(patron, texto)
