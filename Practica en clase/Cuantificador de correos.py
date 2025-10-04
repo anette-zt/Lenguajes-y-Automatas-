@@ -43,4 +43,4 @@ plt.ylabel("valores")
 plt.xlabel("Tipo de correo")
 
 
-plt.show()
+plt.show()   
