@@ -42,5 +42,4 @@ plt.title('Correos Válidos vs Inválidos')
 plt.ylabel("valores")
 plt.xlabel("Tipo de correo")
 
-
 plt.show()   
