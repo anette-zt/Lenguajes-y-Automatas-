@@ -1,3 +1,10 @@
+LISTA DE 3000 CORREOS ELECTRÓNICOS PARA PRUEBAS DE EXPRESIONES REGULARES
+================================================================================
+
+Este archivo contiene 3000 correos electrónicos (50% válidos, 50% inválidos)
+
+================================================================================
+
 1. juan.garcia@gmail.com
 2. maria@@hotmail.com
 3. pedro123@yahoo.com
