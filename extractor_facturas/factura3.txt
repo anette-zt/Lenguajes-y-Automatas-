@@ -1,0 +1,35 @@
+================================================
+          LIBRERÍA PÁGINAS SABIAS
+================================================
+RFC: LPS950310NM9
+Dirección: Blvd. Costero 890, Ensenada, BC
+Teléfono: (646) 555-1234
+
+------------------------------------------------
+FACTURA
+------------------------------------------------
+Número de Factura: FAC-2025-003
+Fecha: 20/03/2025
+Cliente: Carlos Ramírez Soto
+RFC Cliente: RASC881205HG6
+Correo: carlos.ramirez@email.com
+
+------------------------------------------------
+PRODUCTOS
+------------------------------------------------
+1. Cuaderno profesional      $42.50    x5   $212.50
+2. Plumas azules (10pz)      $35.00    x2    $70.00
+3. Resaltadores colores      $28.00    x4   $112.00
+4. Corrector líquido         $18.50    x3    $55.50
+5. Carpeta tamaño carta      $22.00    x6   $132.00
+
+------------------------------------------------
+Subtotal:                              $582.00
+IVA (16%):                              $93.12
+Total:                                 $675.12
+------------------------------------------------
+
+Forma de pago: Transferencia bancaria
+
+Gracias por su compra!
+================================================
